@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Mensajes</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestión de Mensajes</h1>
+        </header>
+        <main>
+            <section class="message-list">
+                <h2>Mensajes Asignados</h2>
+                <div id="messages">
+                    <!-- Mensajes se cargan dinámicamente -->
+                </div>
+            </section>
+            <section class="response-area">
+                <h2>Responder Mensaje</h2>
+                <form id="responseForm">
+                    <label for="selectedMessage">Mensaje Seleccionado:</label>
+                    <textarea id="selectedMessage" disabled></textarea>
+
+                    <label for="response">Tu Respuesta:</label>
+                    <textarea id="response" placeholder="Escribe tu respuesta..." required></textarea>
+
+                    <button type="submit">Enviar Respuesta</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
